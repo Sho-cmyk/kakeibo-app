@@ -5,7 +5,7 @@ window.onload = function() {
 }
 
 function changeCategory() {
-    var changeCategory = category.value;
+    var changedCategory = category.value;
     if (changedCategory == "1") {
         setShokuhi();
     } else if (changedCategory == "2") {
@@ -56,7 +56,14 @@ function setShokuhi() {
         {cd:"5", label:"夜ご飯"},
         {cd:"6", label:"カフェ"},
         {cd:"7", label:"その他食費"}
-    ]
+    ];
+
+    Shokuhi.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setNichiyohin() {
@@ -69,7 +76,14 @@ function setNichiyohin() {
         {cd:"12", label:"ペット用品"},
         {cd:"13", label:"タバコ"},
         {cd:"14", label:"その他日用品"}
-    ]
+    ];
+
+    Nichiyohin.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setShumi() {
@@ -83,7 +97,14 @@ function setShumi() {
         {cd:"20", label:"旅行"},
         {cd:"21", label:"秘密の趣味"},
         {cd:"22", label:"その他趣味・娯楽"}
-    ]
+    ];
+
+    Shumi.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setKosaihi() {
@@ -94,7 +115,14 @@ function setKosaihi() {
         {cd:"25", label:"プレゼント代"},
         {cd:"26", label:"冠婚葬祭"},
         {cd:"27", label:"その他交際費"}
-    ]
+    ];
+
+    Kosaihi.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setKotuhi() {
@@ -106,7 +134,14 @@ function setKotuhi() {
         {cd:"31", label:"タクシー"},
         {cd:"32", label:"飛行機"},
         {cd:"33", label:"その他交通費"}
-    ]
+    ];
+
+    Kotuhi.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setIfuku() {
@@ -118,7 +153,14 @@ function setIfuku() {
         {cd:"37", label:"化粧品"},
         {cd:"38", label:"アクセサリー"},
         {cd:"39", label:"その他衣服・美容"}
-    ]
+    ];
+
+    Ifuku.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setKenko() {
@@ -129,7 +171,14 @@ function setKenko() {
         {cd:"42", label:"医療費"},
         {cd:"43", label:"薬"},
         {cd:"44", label:"その他健康・医療"}
-    ]
+    ];
+
+    Kenko.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setJidosha() {
@@ -143,7 +192,14 @@ function setJidosha() {
         {cd:"50", label:"車検・整備"},
         {cd:"51", label:"自動車保険"},
         {cd:"52", label:"その他自動車"}
-    ]
+    ];
+
+    Jidosha.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setKyoyo() {
@@ -155,7 +211,14 @@ function setKyoyo() {
         {cd:"56", label:"学費"},
         {cd:"57", label:"塾"},
         {cd:"58", label:"その他教養・教育"}
-    ]
+    ];
+
+    Kyoyo.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setTokubetu() {
@@ -164,7 +227,14 @@ function setTokubetu() {
         {cd:"59", label:"家具・家電"},
         {cd:"60", label:"住宅・リフォーム"},
         {cd:"61", label:"その他特別な支出"}
-    ]
+    ];
+
+    Tokubetu.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setGenkin() {
@@ -175,7 +245,14 @@ function setGenkin() {
         {cd:"64", label:"電子マネー"},
         {cd:"65", label:"使途不明金"},
         {cd:"66", label:"その他現金・カード"}
-    ]
+    ];
+
+    Genkin.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setSuido() {
@@ -186,7 +263,14 @@ function setSuido() {
         {cd:"69", label:"ガス・灯油代"},
         {cd:"70", label:"水道代"},
         {cd:"71", label:"その他水道・光熱費"}
-    ]
+    ];
+
+    Suido.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setTushin() {
@@ -199,7 +283,14 @@ function setTushin() {
         {cd:"76", label:"情報サービス"},
         {cd:"77", label:"宅配便・運送費"},
         {cd:"78", label:"その他通信費"}
-    ]
+    ];
+
+    Tushin.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setJutaku() {
@@ -211,7 +302,14 @@ function setJutaku() {
         {cd:"82", label:"管理費・積立金"},
         {cd:"83", label:"地震・火災保険"},
         {cd:"84", label:"その他住宅"}
-    ]
+    ];
+
+    Jutaku.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setZei() {
@@ -221,7 +319,14 @@ function setZei() {
         {cd:"86", label:"年金保険料"},
         {cd:"87", label:"健康保険料"},
         {cd:"88", label:"その他税・社会保障"}
-    ]
+    ];
+
+    Zei.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setHoken() {
@@ -230,7 +335,14 @@ function setHoken() {
         {cd:"89", label:"生命保険"},
         {cd:"90", label:"医療保険"},
         {cd:"91", label:"その他保険"}
-    ]
+    ];
+
+    Hoken.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setOther() {
@@ -242,12 +354,26 @@ function setOther() {
         {cd:"95", label:"事業投資"},
         {cd:"96", label:"寄付金"},
         {cd:"97", label:"雑費"}
-    ]
+    ];
+
+    Other.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
 
 function setMibunrui() {
     subcategory.textContent = null;
     var Mibunrui = [
         {cd:"98", label:"未分類"}
-    ]
+    ];
+
+    Mibunrui.forEach(function(value) {
+        var op = document.createElement("option");
+        op.value = value.cd;
+        op.text = value.label;
+        subcategory.appendChild(op);
+    });
 }
