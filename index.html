@@ -4,49 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="dist/kakeibo-app.js"></script>
+    <title>家計簿</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 </head>
 
 <body>
-    <div>
-        <h1>家計簿管理アプリ</h1>
-        <br>
-        <div>
-            <h2>カンタン入力</h2>
-            <div class="nyuryoku">
-                <p>大カテゴリ</p>
-                <select name="category" id="category">
-                    <option value="">大カテゴリを選択してください</option>
-                    <option value="1">食費</option>
-                    <option value="2">日用品</option>
-                    <option value="3">趣味・娯楽</option>
-                    <option value="4">交際費</option>
-                    <option value="5">交通費</option>
-                    <option value="6">衣服・美容</option>
-                    <option value="7">健康・医療</option>
-                    <option value="8">自動車</option>
-                    <option value="9">教養・教育</option>
-                    <option value="10">特別な支出</option>
-                    <option value="11">現金・カード</option>
-                    <option value="12">水道・光熱費</option>
-                    <option value="13">通信費</option>
-                    <option value="14">住宅</option>
-                    <option value="15">税・社会保障</option>
-                    <option value="16">保険</option>
-                    <option value="17">その他</option>
-                    <option value="18">未分類</option>
-                </select>
-                <p>小カテゴリ</p>
-                <select name="subcategory" id="subcategory">
-                    <option value="">小カテゴリを選択してください</option>
-                </select>
-            </div>
-        </div>
-        <br>
+    <div class="nyuryoku">
+    <div class="box1">
+        <p>カンタン入力</p>
     </div>
+    <div class="container1">
+        <div id="id2" class="flexcontent1">
+            <select name="category" id="category">
+                <option value="">大カテゴリを選択してください</option>
+                <option value="1">食費</option>
+                <option value="2">日用品</option>
+                <option value="3">趣味・娯楽</option>
+                <option value="4">交際費</option>
+                <option value="5">交通費</option>
+                <option value="6">衣服・美容</option>
+                <option value="7">健康・医療</option>
+                <option value="8">自動車</option>
+                <option value="9">教養・教育</option>
+                <option value="10">特別な支出</option>
+                <option value="11">現金・カード</option>
+                <option value="12">水道・光熱費</option>
+                <option value="13">通信費</option>
+                <option value="14">住宅</option>
+                <option value="15">税・社会保障</option>
+                <option value="16">保険</option>
+                <option value="17">その他</option>
+                <option value="18">未分類</option>
+            </select>
+            </div>
+            <div id="id2" class="flexcontent2">
+            <select name="subcategory" id="subcategory">
+                <option value="">小カテゴリを選択してください</option>
+            </select>
+            </div>
+      </div>
+      <div class="container2">
+        <div id="id2" class="flexcontent3">
+            <input type="text" id="money" name="money" required minlength="1" maxlength="8" size="10" value="円" style="text-align: right;">
+          </div>
+          <div id="id2" class="flexcontent4">
+            <textarea type="comment" id="comments" name="comments" cols="30" rows="5">備考欄：内容を記入してください（任意）</textarea>
+          </div>
+      </div>
+      <div class="container3">
+        <div id="id2" class="flexcontent5">
+          <input type="button" value="保存する">
+        </div>
+      </div>
+    </div>
+    <div class="tablecontent">
+        <div class="box1">
+            <p>今月の収支（2021/05/01~2021/05/31）</p>
+        </div>
+        <div class="table">
+        <table>
+            <tbody>
+              <tr><th>当月収入</th><td>0円</td></tr>
+              <tr><th>当月支出</th><td>0円</td></tr>
+              <tr><th>当月収支</th><td>0円</td></tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+    <div class="amountmoney">
+    <div class="box1">
+        <p>総資産</p>
+    </div>
+    
+    <div class="piearea">
+    <div class="pie">
+    </div>
+    </div>
+    <div class="ennarea">
+        <div>円(前日比)ー％</div>
+    </div>
+    </div>
+    <div class="updown">
+        <div class="box1">
+            <p>増減</p>
+        </div>
+        <div class="updowntable">
+        <table>
+            <tbody>
+              <tr><th>今週</th><td>ー％</td><td>ー</td></tr>
+              <tr><th>今月</th><td>ー％</td><td>ー</td></tr>
+              <tr><th>今年</th><td>ー％</td><td>ー</td></tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+        <div class="uchiwake">
+            <div class="box1">
+                <p>内訳</p>
+            </div>
+            <div class="uchiwaketable">
+            <table>
+                <tbody>
+                  <tr><th>預金・現金・暗号資産</th><td>ー％</td><td>ー</td></tr>
+                </tbody>
+            </table>
+            </div>
+            </div>
+    
+    <div class="box1">
+        <p>入出金の時系列推移 <span class="mgr-10">直近1ヶ月</span></p>
+    </div>
+    <div class="box1">
+        <p>総資産</p>
+    </div>
+    <div class="box1">
+        <p>増減</p>
+    </div>
+    <div class="box1">
+        <p>内訳</p>
+    </div>
+    <div class="box1">
+        <p>資産の時系列推移額</p>
+    </div>
+
 </body>
 
 </html>
