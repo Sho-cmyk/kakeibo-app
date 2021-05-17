@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="dist/kakeibo-app.js"></script>
+    <title>家計簿</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+</head>
+
+<body>
+    <div class="nyuryoku">
+    <div class="box1">
+        <p>カンタン入力</p>
+    </div>
+    <div class="container1">
+        <div id="id2" class="flexcontent1">
+            <select class="bigcategoryselector" name="category" id="category">
+                <option value="">大カテゴリを選択してください</option>
+                <option value="1">食費</option>
+                <option value="2">日用品</option>
+                <option value="3">趣味・娯楽</option>
+                <option value="4">交際費</option>
+                <option value="5">交通費</option>
+                <option value="6">衣服・美容</option>
+                <option value="7">健康・医療</option>
+                <option value="8">自動車</option>
+                <option value="9">教養・教育</option>
+                <option value="10">特別な支出</option>
+                <option value="11">現金・カード</option>
+                <option value="12">水道・光熱費</option>
+                <option value="13">通信費</option>
+                <option value="14">住宅</option>
+                <option value="15">税・社会保障</option>
+                <option value="16">保険</option>
+                <option value="17">その他</option>
+                <option value="18">未分類</option>
+            </select>
+            </div>
+            <div id="id2" class="flexcontent2">
+            <select class="subcategoryselector" name="subcategory" id="subcategory">
+                <option value="">小カテゴリを選択してください</option>
+            </select>
+            </div>
+      </div>
+      <div class="container2">
+        <div id="id2" class="flexcontent3">
+            <input class="money" type="text" id="money" name="money" required minlength="1" maxlength="8" size="10" placeholder="支出額を記入してください">
+            <div class="yen">円</div>
+          </div>
+        <div id="id2" class="flexcontent4">
+            <input class="date" type="date">
+        </div>
+      </div>
+      <div class="container3">
+      <div id="id2" class="flexcontent5">
+        <textarea class="textarea" type="comment" id="comments" name="comments" cols="30" rows="5" placeholder="備考欄：内容を記入してください（任意）"></textarea>
+      </div>
+      </div>
+      <div class="container4">
+        <div id="id2" class="flexcontent6">
+          <input class="button" type="button" value="保存する">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
