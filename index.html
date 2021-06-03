@@ -12,11 +12,10 @@
 
 <body>
     <div class="nyuryoku">
-    <div class="box1">
-        <p>カンタン入力</p>
-    </div>
-    <div class="container1">
-        <div id="id2" class="flexcontent1">
+        <div class="title">カンタン入力</div>
+    <div class="largebackground">
+    <div class="category">
+        <div id="id2" class="item bigcategoryframe">
             <select class="bigcategoryselector" name="category" id="category">
                 <option value="">大カテゴリを選択してください</option>
                 <option value="1">食費</option>
@@ -37,31 +36,27 @@
                 <option value="16">保険</option>
                 <option value="17">その他</option>
                 <option value="18">未分類</option>
-                <option value="19">test</option>
             </select>
             </div>
-            <div id="id2" class="flexcontent2">
+            <div id="id2" class="subcategoryframe">
             <select class="subcategoryselector" name="subcategory" id="subcategory">
                 <option value="">小カテゴリを選択してください</option>
             </select>
             </div>
       </div>
-      <div class="container2">
-        <div id="id2" class="flexcontent3">
+      <div class="expense-and-date-frame">
+        <div id="id2" class="expense">
             <input class="money" type="text" id="money" name="money" required minlength="1" maxlength="8" size="10" placeholder="支出額を記入してください">
             <div class="yen">円</div>
           </div>
-        <div id="id2" class="flexcontent4">
+        <div id="id2" class="dateframe">
             <input class="date" type="date">
         </div>
       </div>
-      <div class="container3">
-      <div id="id2" class="flexcontent5">
+      <div class="text-area-frame">
         <textarea class="textarea" type="comment" id="comments" name="comments" cols="30" rows="5" placeholder="備考欄：内容を記入してください（任意）"></textarea>
       </div>
-      </div>
-      <div class="container4">
-        <div id="id2" class="flexcontent6">
+      <div class="button-frame">
           <input class="button" type="button" value="保存する">
         </div>
       </div>
