@@ -1,10 +1,10 @@
-.nyuryoku {
+.input {
   display: grid;
   height: 50vh;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto auto auto auto auto;
 }
-.nyuryoku .title {
+.input .title {
   grid-column: 2 / -2;
   grid-row: 1;
   text-align: center;
@@ -15,7 +15,7 @@
   font-weight: bold;
 }
 
-.nyuryoku .largebackground {
+.input .largebackground {
   grid-column: 2 / -2;
   grid-row: 2 / span 4;
   background: rgba(230, 230, 230, 0.92);
@@ -70,7 +70,7 @@
   grid-column: 1 / span 11;
 }
 
-.expense .yen {
+.expense .unit {
   grid-column: 12;
 }
 
