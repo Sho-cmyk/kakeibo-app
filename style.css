@@ -4,6 +4,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto auto auto auto auto;
 }
+
 .input .title {
   grid-column: 2 / -2;
   grid-row: 1;
@@ -15,7 +16,7 @@
   font-weight: bold;
 }
 
-.input .largebackground {
+.input .large_background {
   grid-column: 2 / -2;
   grid-row: 2 / span 4;
   background: rgba(230, 230, 230, 0.92);
@@ -26,41 +27,41 @@
   gap: 24px;
 }
 
-.largebackground .category {
+.large_background .category {
   grid-column: 2 / span 10;
   grid-row: 2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.category .bigcategoryframe {
+.category .big_category_frame {
   grid-column: 2 / span 4;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.bigcategoryframe .bigcategoryselector {
+.big_category_frame .big_category_selector {
   grid-column: 1 / 13;
 }
 
-.category .subcategoryframe {
+.category .sub_category_frame {
   grid-column: 8 / span 4;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.subcategoryframe .subcategoryselector {
+.sub_category_frame .sub_category_selector {
   grid-column: 1 / 13;
 }
 
-.largebackground .expense-and-date-frame {
+.large_background .expense_and_date_frame {
   grid-column: 2 / span 10;
   grid-row: 3;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.expense-and-date-frame .expense {
+.expense_and_date_frame .expense {
   grid-column: 2 / span 4;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -74,41 +75,44 @@
   grid-column: 12;
 }
 
-.expense-and-date-frame .dateframe {
+.expense_and_date_frame .date_frame {
   grid-column: 8 / span 4;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.dateframe .date {
+.date_frame .date {
   grid-column: 1 / 13;
 }
 
-.largebackground .text-area-frame {
+.large_background .text_area_frame {
   grid-column: 3 / -3;
   grid-row: 4;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.text-area-frame .textarea {
+.text_area_frame .text_area {
   grid-column: 1/-1;
 }
 
-.largebackground .button-frame {
+.large_background .button_frame {
   grid-column: 6 / span 2;
   grid-row: 5;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.button-frame .button {
+.button_frame .button {
   grid-column: 1/-1;
   grid-row: 6;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  background: #70e049;
+  color: white;
+  background-color: #51a351;
+  border: 0;
+  border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: transparent;
 }
