@@ -1,0 +1,119 @@
+.input {
+  display: grid;
+  height: 50vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto auto auto;
+}
+
+.input .title {
+  grid-column: 2 / -2;
+  grid-row: 1;
+  text-align: center;
+  border: 5px solid #f5a70f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.input .large_background {
+  grid-column: 2 / -2;
+  grid-row: 2 / span 4;
+  background: rgba(230, 230, 230, 0.92);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 24px;
+}
+
+.large_background .category {
+  grid-column: 2 / span 10;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.category .big_category_frame {
+  grid-column: 2 / span 4;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.big_category_frame .big_category_selector {
+  grid-column: 1 / 13;
+}
+
+.category .sub_category_frame {
+  grid-column: 8 / span 4;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.sub_category_frame .sub_category_selector {
+  grid-column: 1 / 13;
+}
+
+.large_background .expense_and_date_frame {
+  grid-column: 2 / span 10;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.expense_and_date_frame .expense {
+  grid-column: 2 / span 4;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.expense .money {
+  grid-column: 1 / span 11;
+}
+
+.expense .unit {
+  grid-column: 12;
+}
+
+.expense_and_date_frame .date_frame {
+  grid-column: 8 / span 4;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.date_frame .date {
+  grid-column: 1 / 13;
+}
+
+.large_background .text_area_frame {
+  grid-column: 3 / -3;
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.text_area_frame .text_area {
+  grid-column: 1/-1;
+}
+
+.large_background .button_frame {
+  grid-column: 6 / span 2;
+  grid-row: 5;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.button_frame .button {
+  grid-column: 1/-1;
+  grid-row: 6;
+  cursor: pointer;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  background-color: #51a351;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: transparent;
+}
